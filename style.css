@@ -4,7 +4,49 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+/* --------------------------- logo/buscador/login ---------------------------- */
+.contenedor_inicio_1{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 3rem 0 0;
+    margin: 0 0 3rem 0;
+    gap: 5rem;
+}
+.contenedor_inicio_1 .container-logo{
+    margin: 1rem 0 0 0;
+}
+.contenedor_inicio_1 .buscador{
+    width: 20rem;
+    height: 3rem;
+}
+.contenedor_inicio_1 .buscador .form-buscador {
+    width:100%;
+    height: 100%; 
+}
+.contenedor_inicio_1 .buscador .form-buscador .input_buscador{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1rem;
+}
+.contenedor_inicio_1 .contenedor-login{
 
+    height: 2.2rem;
+    width: 6.4rem;
+}
+.contenedor_inicio_1 .contenedor-login .input_login{
+    width: 100%;
+    height: 100%;
+    background: rgb(253,97,53);
+    border: none;
+    border-radius: .5rem;
+    color: white;
+    font-weight: bolder;
+    font-size: .75rem;
+}
+
+/* --------------------------- nav-bar ---------------------------- */
 nav{
     background-color: rgb(253,97,53);
     width: 100%;
