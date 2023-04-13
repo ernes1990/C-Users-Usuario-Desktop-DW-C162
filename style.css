@@ -5,6 +5,10 @@
     font-family: 'Roboto', sans-serif;
 }
 /* --------------------------- logo/buscador/login ---------------------------- */
+body{
+    background: #ec853111;
+    height: 100%;
+}
 .contenedor_inicio_1{
     display: flex;
     justify-content:space-between;
@@ -65,7 +69,7 @@
 
 .modal{
     position: fixed;
-    height: 80%;
+    height: 100%;
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.5);
@@ -153,8 +157,10 @@
     display: none;
 }
 .lbl-modal{
+    display: flex;
+    justify-content: center;
     cursor: pointer;
-    
+    align-items: center;
 }
 
 
@@ -170,6 +176,7 @@
     align-items: center;
     width: 100%;
     height: 100%;
+    padding: 1rem 0 0 0;
 }
 
 
@@ -214,15 +221,26 @@
     left: .6rem;
 }
 /* --------------------------- nav-bar ---------------------------- */
-nav{
-    background-color: rgb(247, 82, 36);
+.nav_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
+    height: 4rem;
+    padding: 0 2rem;
+}
+.nav{
+    background-color: rgb(247, 82, 36);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     padding: 5px;
     border-radius: 10px;
     box-shadow: (0px 5px 5px rgba(0, 0, 0, 0.25));
 }
 
-nav{
+.nav{
     display: flex;
     justify-content: center;
     margin-top: 0px;
@@ -230,10 +248,15 @@ nav{
 
 }
 
-a {
-    text-decoration: none; 
+.nav a {
+    text-decoration: none;
+    font-weight: bold;
     color: whitesmoke;
     filter: drop-shadow(0px 5px 5px rgba(0, 0, 0,));
+    transition: .3s;
+}
+.nav a:hover{
+    color: rgb(61, 43, 32);
 }
 
 footer{
@@ -256,3 +279,130 @@ footer{
 img{
     width: 10vw;
 }
+/* --------------------------- carrusel ---------------------------- */
+.container-padre-carrousel{
+    padding: 2rem 0;
+    width: 100%;
+    display: flex;
+    padding: 0 2rem;
+    margin: 1rem 0;
+}
+.container-carrusel-style{
+    width: 100%;
+    height: 65vh;
+    display: flex;
+}
+.carousel-style{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;  
+}
+.slide-carrousel-items{
+    width: 100%;
+    height: 100%;
+}
+.img-carrusel{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --------------------------- carrusel ---------------------------- */
+
+.form {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 2rem 0; 
+    flex-wrap: wrap;
+}
+.form_titulo{
+    width: 100%;
+    padding-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(21, 21, 21);
+    text-shadow: 2px 0px 2px rgba(252, 135, 68, 0.222);
+}
+.form_group{
+/*     background: rgb(228, 228, 228); */
+    width: 40%;
+    height: 100%;
+    padding: 2rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 5px 2px 4px rgba(255, 255, 255, 0.497);
+}
+.form_group_1{
+    width: 50%;
+    position: relative;
+    color: #5757577e;
+    padding: 0 .5rem;
+    font-weight: bold;
+}
+.form_input{
+    width: 100%;
+    font-size: 1rem;
+    padding: .6rem .3rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #2f2e2e7e;
+    background: rgba(0, 0, 0, 0);
+}
+.form_label{
+    position: absolute;
+    color: #1b1a1a7e;
+    top: -.5rem;
+    left: .4rem;
+    transform: translateY(10px);
+    transition: .4s;
+}
+.form_input:focus + .form_label,
+.form_input:not(:placeholder-shown) + .form_label {
+    transform: translateY(-12px) scale(.9);
+    transform-origin: top left;
+    color: #3866f2;
+}
+
+
+.form_group_2{
+    width: 100%;
+    margin-top: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.form_textarea{
+    border: 1px solid #2f2e2e7e;
+    height: 30% !important;
+    resize: none;
+    border-radius: .2rem;
+    padding: 0 .5rem;
+}
+.form_label_textarea{
+    top: -.6rem;
+    left: 1rem;
+}
+
+.boton_enviar{
+    width: 100%;
+    display: flex;
+    padding-right: .45rem;
+    justify-content: end;
+    gap: .4rem;
+}
+.boton_enviar input{
+    background: rgb(62, 68, 171);
+    border: 1px solid #4545454e;
+    box-shadow: 5px 2px 4px rgba(199, 198, 198, 0.75);
+    padding: .1rem 1rem;
+    border-radius: .2rem;
+    color: #fff;
+    transition: .2s;
+}
+.boton_enviar input:hover{
+    background: rgb(70, 118, 162);
+    transform: scale(.94);
+}
+
+
