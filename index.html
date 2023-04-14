@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8" />
@@ -17,7 +17,7 @@
         <!----------------- modal ------------------->
         <div class="contenedor_inicio_1">
             <div class="container-logo">
-                <img src="img/png/logo-no-background.png" class="img-fluid" alt="LOGO" />
+                <img src="img/img-logo-varios-colores/logo-no-background.png" class="img-fluid" alt="LOGO" />
             </div>
             <div class="buscador">
                 <form class="d-flex form-buscador" role="search">
@@ -41,16 +41,24 @@
                         </div>
 
                         <div class="modal-content rounded-0 rounded-bottom border-0">
-                            <div class="modal-body">
-                                <div class="form-outline container-form-login">
-                                    <label class="form-label text-white d-flex position-relative" for="loginName">Email
-                                        o Usuario</label>
-                                    <input type="email" id="loginName" class="form-control" />
+                            <form class="modal-body">
+                                <div class="d-flex form_contenedor">
+                                  <div class="form_group_1">
+                                    <input class="form_input form_input_1" type="text" id="nombre" name="nombre" placeholder=" " required>
+                                    <label class="form_label form_label_1" for="nombre">Nombre: </label>
+                                  </div>
+                                  <div class="form_group_1">
+                                    <input class="form_input form_input_1" type="text" id="apellido" name="apellido" placeholder=" " required>
+                                    <label class="form_label form_label_1" for="apellido">Apellido: </label>
+                                  </div>
                                 </div>
-                                <div class="form-outline mb-4">
-                                    <label class="form-label text-white d-flex position-relative"
-                                        for="loginPassword">Contraseña</label>
-                                    <input type="password" id="loginPassword" class="form-control" />
+                                <div class="form_group_1 form_group_2">
+                                  <input class="form_input form_input_1" type="email" id="email" name="email" placeholder=" " required>
+                                  <label class="form_label form_label_1" for="email">Gmail: </label>
+                                </div>
+                                <div class="form_group_1 form_group_2">
+                                  <input class="form_input form_input_1" type="password" id="password" name="password" placeholder=" " required>
+                                  <label class="form_label form_label_1" for="password">Contraseña: </label>
                                 </div>
                                 <div class="row mb-4">
                                     <div class="col rembrme d-flex justify-content-center">
@@ -60,9 +68,9 @@
                                 </div>
                                 <!-- Submit button -->
                                 <div class="btn_submit">
-                                    <button type="submit" class="btn btn_ingresar">Ingresar</button>
+                                    <input type="submit" class="btn btn_ingresar " value="Ingresar" />
                                 </div>
-                            </div>
+                            </form>
 
                             <div class="registrarse">
                                 <p class="mb-0 text-white d-flex">No tienes una cuenta?<a href="#!"
@@ -78,9 +86,9 @@
         <div class="nav_container">
             <nav class="nav">
                 <a href="#">Inicio</a>
-                <a href="#">Productos</a>
-                <a href="#">Nosotros</a>
-                <a href="#">Contacto</a>
+                <a href="#ofertas">Productos</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#contactanos">Contactanos</a>
             </nav>
         </div>
     </header>
@@ -110,12 +118,232 @@
                   </div>
             </div>
         </section>
-        <section
-        class="container-form">
-        <form class="form" action="https://usebasin.com/f/082bf1538729" method="POST" enctype="multipart/form-data"
-        id="form">
+        <!---------------------ofertas ----------------------->
+        <div class="titulo_oferta barra_baja">
+          <h2 id="ofertas">OFERTAS</h2>
+        </div>
+        <section class="container_card">
+          
+          <!-- card -->
+          <div class="card-body">
+            <div class="card_header">
+              <img src="./img/img-carrousel/img-1.png" alt="...">
+            </div>
+            <div class="card_footer">
+              <h3>Articulo</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, corporis!</p>
+              <div class="buttom_card">
+                <a href="#">Mas Información</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <div class="card_header">
+              <img src="./img/img-carrousel/img-1.png" alt="...">
+            </div>
+            <div class="card_footer">
+              <h3>Articulo</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, corporis!</p>
+              <div class="buttom_card">
+                <a href="#">Mas Información</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <div class="card_header">
+              <img src="./img/img-carrousel/img-1.png" alt="...">
+            </div>
+            <div class="card_footer">
+              <h3>Articulo</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, corporis!</p>
+              <div class="buttom_card">
+                <a href="#">Mas Información</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <div class="card_header">
+              <img src="./img/img-carrousel/img-1.png" alt="...">
+            </div>
+            <div class="card_footer">
+              <h3>Articulo</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, corporis!</p>
+              <div class="buttom_card">
+                <a href="#">Mas Información</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <div class="card_header">
+              <img src="./img/img-carrousel/img-1.png" alt="...">
+            </div>
+            <div class="card_footer">
+              <h3>Articulo</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, corporis!</p>
+              <div class="buttom_card">
+                <a href="#">Mas Información</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <div class="card_header">
+              <img src="./img/img-carrousel/img-1.png" alt="...">
+            </div>
+            <div class="card_footer">
+              <h3>Articulo</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, corporis!</p>
+              <div class="buttom_card">
+                <a href="#">Mas Información</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <div class="card_header">
+              <img src="./img/img-carrousel/img-1.png" alt="...">
+            </div>
+            <div class="card_footer">
+              <h3>Articulo</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, corporis!</p>
+              <div class="buttom_card">
+                <a href="#">Mas Información</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <div class="card_header">
+              <img src="./img/img-carrousel/img-1.png" alt="...">
+            </div>
+            <div class="card_footer">
+              <h3>Articulo</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, corporis!</p>
+              <div class="buttom_card">
+                <a href="#">Mas Información</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <div class="card_header">
+              <img src="./img/img-carrousel/img-1.png" alt="...">
+            </div>
+            <div class="card_footer">
+              <h3>Articulo</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, corporis!</p>
+              <div class="buttom_card">
+                <a href="#">Mas Información</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <div class="card_header">
+              <img src="./img/img-carrousel/img-1.png" alt="...">
+            </div>
+            <div class="card_footer">
+              <h3>Articulo</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, corporis!</p>
+              <div class="buttom_card">
+                <a href="#">Mas Información</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <div class="card_header">
+              <img src="./img/img-carrousel/img-1.png" alt="...">
+            </div>
+            <div class="card_footer">
+              <h3>Articulo</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, corporis!</p>
+              <div class="buttom_card">
+                <a href="#">Mas Información</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <div class="card_header">
+              <img src="./img/img-carrousel/img-1.png" alt="...">
+            </div>
+            <div class="card_footer">
+              <h3>Articulo</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, corporis!</p>
+              <div class="buttom_card">
+                <a href="#">Mas Información</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <div class="card_header">
+              <img src="./img/img-carrousel/img-1.png" alt="...">
+            </div>
+            <div class="card_footer">
+              <h3>Articulo</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, corporis!</p>
+              <div class="buttom_card">
+                <a href="#">Mas Información</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <div class="card_header">
+              <img src="./img/img-carrousel/img-1.png" alt="...">
+            </div>
+            <div class="card_footer">
+              <h3>Articulo</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, corporis!</p>
+              <div class="buttom_card">
+                <a href="#">Mas Información</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-body">
+            <div class="card_header">
+              <img src="./img/img-carrousel/img-1.png" alt="...">
+            </div>
+            <div class="card_footer">
+              <h3>Articulo</h3>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, corporis!</p>
+              <div class="buttom_card">
+                <a href="#">Mas Información</a>
+              </div>
+            </div>
+          </div>
+
+
+          
+          
+
+        </section>
+        <section id="nosotros" class="container_nosotros">
+          <div class="titulo_oferta barra_baja">
+            <h2 id="ofertas">NOSOTROS</h2>
+          </div>
+          <div class="container p-5 container-parrafo_nosotros">
+            <p class="pb-0 mb-0 m-x-4">
+              Somos una empresa dedicada a la venta de hardware 
+              que brinda sus servicios desde hace 25 años, somos la mejor calidad del mercado y la empresa mas confiable.
+            </p>
+            <p class="pb-0 mb-0">La empresa fue fundada por cuatro progrmadores que soñaban con tener su propia StartUp ¿lo lograron?, por supuesto, con mas de 25mil clientes por dia, vendiendo prodctos a todo el pais y a algunas regiones cercanas, HardComputer es un exito regional y trabajaremos para ser internacionales y reprentar nuestra region de la mejor manera :3.</p>
+          </div>
+        </section>
+        <section id="contactanos" class="container-form">
+        <div class="titulo_oferta barra_baja">
+          <h2 id="ofertas">CONTACTANOS</h2>
+        </div>
+        <form class="form">
         <div class="form_group">
-          <h1 class="form_titulo">Haznos tu consulta</h1>
+          
           <div class="container-fluid">
             <div class="d-flex form_contenedor">
               <div class="form_group_1">
